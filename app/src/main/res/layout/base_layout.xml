@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ljb.page.PageStateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/page_layout"
+    android:background="#F8F8F8"
+    app:page_empty="@layout/default_view_empty"
+    app:page_error="@layout/default_view_error"
+    app:page_load="@layout/dialog_loading">
+
+</com.ljb.page.PageStateLayout>

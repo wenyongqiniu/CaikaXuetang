@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/iv_back_music"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="center"
+        android:src="@mipmap/shut_music" />
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="168dp"
+        android:layout_below="@id/tv_musci_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:src="@mipmap/dake_top" />
+
+    <TextView
+        android:id="@+id/tv_musci_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_back_music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/tv_time_j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="100dp"
+            android:background="@mipmap/back_off" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="109dp"
+            android:layout_toEndOf="@id/tv_time_j"
+            android:background="@drawable/shape_music_progress" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="109dp"
+            android:layout_toStartOf="@id/tv_time_z"
+            android:layout_toEndOf="@id/app_bar_music"
+            android:background="@drawable/shape_music_progress_right" />
+
+        <com.example.caikaxuetang.mediaplayer.SeekBarAndText
+            android:id="@+id/app_bar_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="102dp"
+            android:layout_toStartOf="@id/tv_time_z"
+            android:layout_toEndOf="@id/tv_time_j"
+            android:background="@null"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/shape_seekbar"
+            android:thumb="@drawable/shape_music_seekbar_thumb" />
+
+        <TextView
+            android:id="@+id/tv_time_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="100dp"
+            android:background="@mipmap/fast_forward" />
+
+        <TextView
+            android:id="@+id/iv_music_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/music_list"
+            android:textSize="10sp"
+            app:drawableTopCompat="@mipmap/music_list" />
+
+        <ImageView
+            android:id="@+id/iv_last_music"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/dp_40"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@id/iv_pause"
+            android:src="@mipmap/last_music" />
+
+        <ImageView
+            android:id="@+id/iv_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/contimiu_music" />
+
+        <ImageView
+            android:id="@+id/iv_next_music"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_40"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@id/iv_pause"
+            android:src="@mipmap/next_music" />
+
+        <TextView
+            android:id="@+id/tv_double_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@mipmap/double_speed"
+            android:gravity="center"
+            android:text="1.0X"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".learningActivitys.DoHomeWorkActivity">
+
+    <include
+        android:id="@+id/left_out"
+        layout="@layout/leftout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_homework_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left_out"
+        android:background="#FFF2E2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginBottom="60dp"
+        android:id="@+id/rv_homework"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rv_homework_head" />
+
+    <TextView
+        android:id="@+id/tv_commit_answer"
+        android:background="@drawable/login_phone_shape"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:text="提交"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/main_head"
+        layout="@layout/leftout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_group_number"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/main_head"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#FFFFFF" />
+
+    <View
+        android:id="@+id/view_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_below="@+id/rv_group_number"
+        android:background="#F9F9F9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_rv"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="群聊名称"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_rv"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:text="群聊名称"
+        android:textColor="#C6C5C5"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_name_info"
+        android:layout_marginTop="18dp"
+        android:background="#F9F9F9" />
+
+    <TextView
+        android:id="@+id/tv_notice_content_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_name"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="群公告"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_notice_content_"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="群公告"
+        android:textColor="#C6C5C5"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_climb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_notice_content"
+        android:padding="18dp"
+        android:text="聊天记录"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_below="@id/tv_climb"
+        android:layout_marginTop="18dp"
+        android:background="#F9F9F9" />
+
+</RelativeLayout>

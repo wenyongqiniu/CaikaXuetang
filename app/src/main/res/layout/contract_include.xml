@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <TextView
+        android:id="@+id/tv_title_contract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_contract"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_party_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_contract"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/party_a"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_part_a_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_contract"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tv_party_a"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_party_a"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/title_address"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_part_a_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_part_a_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/tv_dizhi"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_party_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_part_a_address"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/tv_party_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/party_b"
+            android:textColor="#000000" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ed_b_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toEndOf="@id/tv_party_b"
+            android:hint="请输入真实姓名"
+            android:textSize="14sp"
+            app:met_hideUnderline="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ed_b_name"
+            android:background="#F3F3F3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ed_b_id"
+            android:background="#F3F3F3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ed_b_phone"
+            android:background="#F3F3F3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ed_b_address"
+            android:background="#F3F3F3" />
+
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_party_b"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/party_b_id"
+            android:textColor="#000000" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ed_b_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ed_b_name"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toEndOf="@id/tv_party_b"
+            android:hint="请输入身份证号"
+            android:textSize="14sp"
+            app:met_hideUnderline="true" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_id"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/phone"
+            android:textColor="#000000" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/ed_b_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ed_b_id"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toEndOf="@id/tv_party_b"
+            android:background="@null"
+            android:hint="请输入联系电话"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="通讯地址"
+            android:textColor="#000000" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ed_b_address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ed_b_phone"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toEndOf="@id/tv_party_b"
+            android:hint="请输入通讯地址"
+            android:textSize="14sp"
+            app:met_hideUnderline="true" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_contract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_party_b"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/tv_yf"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_below="@id/web_contract"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="38dp"
+        android:text="乙      方"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_yf_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/web_contract"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@id/tv_yf"
+        android:text=""
+        android:textColor="#ffc7c7c7"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_yf_date"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_below="@id/tv_yf"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:text="日期"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_yf_name"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@id/tv_yf"
+        android:text=""
+        android:textColor="#ffc7c7c7"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_date"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:background="#F3F3F3" />
+
+</RelativeLayout>

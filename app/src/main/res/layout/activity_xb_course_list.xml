@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+  >
+
+    <include
+        android:id="@+id/left_out"
+        layout="@layout/leftout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/left_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:background="@drawable/xb" />
+
+            <TextView
+                android:id="@+id/tv_title_xb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="27.5dp"
+                android:textColor="#ffffffff"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date_xb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_xb"
+                android:layout_marginStart="18.5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_date_xb"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/xb_list_shape">
+
+                <RelativeLayout
+                    android:id="@+id/rl_detail__message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/no_address_shape">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/tv_add_teacher_tips1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="19dp"
+                        android:text="@string/add_teacher_tips"
+                        android:textColor="#FE8000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_add_teacher_tips1"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="18dp"
+                        android:text="@string/add_teacher_tips2"
+                        android:textColor="#ff6f6f6f"
+                        android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_add_wx"
+                        android:layout_width="90dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/login_phone_shape">
+
+                        <ImageView
+                            android:id="@+id/iv_wx_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="8.5dp"
+                            android:src="@mipmap/wx_teacher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3.5dp"
+                            android:layout_toEndOf="@id/iv_wx_logo"
+                            android:gravity="center"
+                            android:text="@string/add_wx"
+                            android:textColor="#ffffffff"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_arrange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_detail__message"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="21dp"
+                    android:text="@string/course_arrange"
+                    android:textColor="#ff2a2a2a"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_xb_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_arrange"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

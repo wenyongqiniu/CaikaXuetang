@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.caikaxuetang">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission
+        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <application
+        android:name=".MyApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaikaXuetang"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".YsActivity"></activity>
+        <activity android:name=".learningActivitys.StudyCardActivity" />
+        <activity android:name=".myactivitys.MyClassActivity" />
+        <activity android:name=".myactivitys.HetongActivity" />
+        <activity
+            android:name=".learningActivitys.ExamActivity"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity android:name=".chatactivitys.activity.PdfActivity" />
+        <activity android:name=".chatactivitys.activity.ChatWebViewActivity" />
+        <activity
+            android:name=".chatactivitys.activity.Mp4Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chatactivitys.activity.FilePreviewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.imkit.intent.action.openfile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="财咖学堂"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".chatactivitys.activity.GroupConversationActivity" />
+        <activity android:name=".chatactivitys.activity.PersonalConversationActivity" />
+        <activity
+            android:name=".learningActivitys.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".mediaplayer.OpenMusicActivity" />
+        <activity
+            android:name=".learningActivitys.DakeStepActivity"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity android:name=".learningActivitys.EditActivity" />
+        <activity android:name=".learningActivitys.OtherAddressActivity" />
+        <activity android:name=".learningActivitys.XbCourseListActivity" />
+        <activity android:name=".learningActivitys.XbSectionDetailActivity" />
+        <activity android:name=".chatactivitys.activity.GroupInfoActivity" />
+        <activity android:name=".chatactivitys.activity.ClimbBuildingActivity" />
+        <activity android:name=".chatactivitys.activity.DateSearchActivity" />
+        <activity android:name=".chatactivitys.activity.NoticeActivity" />
+        <activity
+            android:name=".learningActivitys.DoHomeWorkActivity"
+            android:windowSoftInputMode="adjustResize|adjustUnspecified|stateHidden" />
+        <activity android:name=".learningActivitys.AnswerActivity" />
+        <activity android:name=".chatactivitys.activity.BuyDaKeActivity" />
+        <activity android:name=".PhoneLoginActivity" />
+    </application>
+
+</manifest>

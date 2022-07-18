@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/top_include"
+        layout="@layout/leftout_title" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_delete_address"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="#ff4e4e4e"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_include"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/receiver"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_receiver_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_include"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@id/receiver"
+        android:background="@null"
+        android:hint="@string/receiver_name"
+        android:paddingStart="28dp"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/receiver"
+        android:layout_marginTop="17dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/phone_number"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <EditText
+        android:inputType="phone"
+        android:id="@+id/ed_receiver_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@id/phone_number"
+        android:background="@null"
+        android:hint="@string/input_receiver_number"
+        android:paddingStart="28dp"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/phone_number"
+        android:layout_marginTop="17dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/area"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/area_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@id/area"
+        android:background="@null"
+        android:hint="@string/area_des"
+        android:paddingStart="28dp"
+        android:textSize="15sp"
+        app:drawableEndCompat="@mipmap/right_go" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/area"
+        android:layout_marginTop="17dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/detail_address"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_receiver_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view3"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@id/detail_address"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/address_des"
+        android:paddingStart="28dp"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/ed_receiver_address"
+        android:layout_marginTop="17dp"
+        android:background="#F6F6F6" />
+
+    <TextView
+        android:id="@+id/tv_set_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view4"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/set_default_address"
+        android:textColor="#ff545454"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_set_default"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/set_default_tips"
+        android:textColor="#ff9a9a9a"
+        android:textSize="12sp" />
+
+    <Switch
+        android:id="@+id/st_default"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/view4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="17dp"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/track_selector" />
+
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_phone_shape"
+        android:gravity="center"
+        android:text="@string/keep_and_use"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

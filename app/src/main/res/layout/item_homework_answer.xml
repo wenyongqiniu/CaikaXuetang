@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_choice_type"
+        android:layout_width="37dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/choice_type_shape"
+        android:gravity="center"
+        android:text="单选"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_question_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:text="下面哪个是我们要关注的人生投资呢？"
+        android:textColor="#2A2A2A"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_question_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question_title"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp" />
+
+    <View
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/view_answer"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rv_question_list"
+        android:layout_marginTop="23dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rv_question_list"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="试题解析"
+        android:textColor="#ff969696"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_answer"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/toast_shape">
+
+        <TextView
+            android:id="@+id/tv_answer_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="22dp"
+            android:text="正确答案：D"
+            android:textColor="#fffe8000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:lineSpacingExtra="5dp"
+            android:id="@+id/tv_anlisy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_answer_code"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="28dp"
+            android:text="每个人的一生都应该做到三大投资：投资金钱、
+投资时间和投资自己。"
+            android:textColor="#ff555555"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/rv_question_list"
+        android:layout_marginTop="25dp"
+        android:background="#F4F4F4" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="76dp"
+        android:layout_height="42.5dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/xb_list_name_shape"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="第二天"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_xb_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_day"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-24dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/xb_list_title_shape" />
+
+</RelativeLayout>

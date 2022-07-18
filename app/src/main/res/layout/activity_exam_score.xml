@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/leftout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_score"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="74dp">
+
+            <com.example.caikaxuetang.utils.RoundImageScoreView
+                android:id="@+id/iv_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/score" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/tv_biye"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="31.5dp"
+                android:layout_toEndOf="@id/tv_biye"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_biye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:text="毕业会考"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_below="@id/tv_biye"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="淘宝无货源训练营"
+                android:textColor="#ffffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_score"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/score_bottom_shape">
+
+            <TextView
+                android:id="@+id/tv_score_result"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="90分"
+                android:textColor="#fffd9504"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_corrent_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_score_result"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="总题数10题 答对9题"
+                android:textColor="#ff515151"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_view_resolution"
+                android:layout_width="167dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_corrent_answer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_phone_shape"
+                android:gravity="center"
+                android:text="查看答案"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_redo"
+                android:layout_width="218dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_view_resolution"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="17dp"
+                android:gravity="center"
+                android:text="重新考试"
+                android:textColor="#FE8000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_head_score"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_score"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-25dp"
+            android:src="@mipmap/logo" />
+    </RelativeLayout>
+
+</RelativeLayout>

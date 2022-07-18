@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="11dp"
+    android:background="@drawable/course_time_shape">
+
+
+    <TextView
+        android:id="@+id/tv_course_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="2020-06-06"
+        android:textColor="#ff2a2a2a"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_full_already"
+        android:gravity="center"
+        android:background="@drawable/full_shape"
+        android:layout_alignParentEnd="true"
+        android:layout_width="33dp"
+        android:layout_height="14dp"
+        android:text="@string/full_already"
+        android:textColor="#ffffffff"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/iv_selected"
+        android:layout_marginEnd="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

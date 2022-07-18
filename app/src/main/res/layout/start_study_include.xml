@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_start_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/start_study" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_success_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_start_study"
+        android:layout_marginTop="21dp"
+        android:text="@string/success_course"
+        android:textColor="#ff2a2a2a"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tv_study_tips1"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_success_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜您，您的课程已经完成"
+        android:textColor="#ff6f6f6f"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/tv_study_tips2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_study_tips1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="激活，快去学习吧"
+        android:textColor="#ff6f6f6f"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_marginTop="61dp"
+        android:id="@+id/tv_start_time"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_study_tips2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开课时间：2022-04-28"
+        android:textColor="#fffe8000"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

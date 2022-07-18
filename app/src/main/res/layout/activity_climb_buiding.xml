@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:fitsSystemWindows="true"
+    tools:context=".rongyunim.activity.ClimbBuildingActivity">
+
+    <com.example.caikaxuetang.utils.EditTextWithDelView
+        android:id="@+id/ed_input_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/test"
+        android:drawableLeft="@drawable/callkit_ic_search"
+        android:drawablePadding="12dp"
+        android:hint="搜索"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="14dp"
+        android:text="取消"
+        android:textColor="#ff5f7c96"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:padding="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_input_info"
+        android:text="日期"
+        android:textColor="#ff5f7c96" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ed_input_info"
+        android:layout_marginTop="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_shape"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/common_dialog_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/common_dialog_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal"
+            android:textColor="#434343"
+            android:textSize="15sp"
+            tools:text="是否选择该时间上课" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/common_dialog_message_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:maxLines="5"
+        android:minHeight="25dp"
+        android:textColor="#FE8000"
+        android:textSize="16sp"
+        tools:text="信息" />
+
+
+    <LinearLayout
+        android:layout_marginBottom="25dp"
+        android:id="@+id/common_dialog_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/dialog_cancle_shape"
+            android:id="@+id/common_dialog_cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="#FE8000"
+            android:textSize="18sp"
+            tools:text="取消"
+            android:focusable="true" />
+
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/dialog_sure_shape"
+            android:id="@+id/common_dialog_confirm_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:text="确定"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>

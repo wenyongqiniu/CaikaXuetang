@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_view">
+
+    <RelativeLayout
+        android:id="@+id/rl_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/radio_checked_single"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="12dp"
+            android:background="@mipmap/un_checked_single" />
+
+        <TextView
+            android:id="@+id/tv_question_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:text=""
+            android:textColor="#ff2a2a2a"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:textSize="14sp"
+        android:id="@+id/ed_text"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ed_homework"
+        android:gravity="start"
+        android:maxLength="140"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tv_tetx_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="20dp"
+        android:text="0/140" />
+
+</RelativeLayout>

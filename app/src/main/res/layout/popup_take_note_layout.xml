@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/music_list_shape">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.5dp"
+        android:layout_marginTop="19dp"
+        android:src="@mipmap/close_pop" />
+
+    <TextView
+        android:id="@+id/tv_take_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14.5dp"
+        android:text="@string/take_note"
+        android:textColor="#ff2d2d2d"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_keep_note"
+        android:layout_width="47.5dp"
+        android:layout_height="24.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginEnd="12.5dp"
+        android:background="@drawable/login_phone_shape"
+        android:gravity="center"
+        android:text="@string/keep_note"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_now_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_keep_note"
+        android:layout_marginTop="14dp"
+        android:background="#FFFAEF"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text=""
+        android:textColor="#fffe8000"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_note"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/tv_now_lesson"
+        android:layout_marginTop="11dp"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/note_tips"
+        android:maxLength="1500"
+        android:paddingStart="17dp"
+        android:paddingTop="11dp"
+        android:paddingEnd="17dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>

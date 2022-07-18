@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.caikaxuetang.utils.RoundImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/conversation_head"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="11dp" />
+
+
+    <TextView
+        android:id="@+id/tv_conversation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/conversation_head"
+        android:text="Simon老师"
+        android:textColor="#ff171819"
+        android:textSize="15sp" />
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_conversation_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_conversation_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/conversation_head"
+        android:text="今天的作业都做了吗？"
+        android:textColor="#ffa8a8a8"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:text="晚上9:24"
+        android:textColor="#ffb6b7b8"
+        android:textSize="11sp" />
+
+    <View
+        android:background="#FFE5E6E7"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/conversation_head"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/conversation_head" />
+
+</RelativeLayout>

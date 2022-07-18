@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/answer_shape2">
+
+        <ImageView
+            android:id="@+id/radio_checked_single"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="12dp"
+            android:background="@mipmap/un_checked_single" />
+
+        <TextView
+            android:id="@+id/tv_question_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="18dp"
+            android:text="下面哪个是我们要关注的人生投资呢？"
+            android:textColor="#ff2a2a2a"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:background="@mipmap/right_answer"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/ed_text"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_below="@id/rl_checked"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ed_homework"
+        android:focusable="false"
+        android:gravity="start"
+        android:inputType="none"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+</RelativeLayout>

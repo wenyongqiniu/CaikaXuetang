@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/course_shape">
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="21dp"
+            android:text="家庭教育特训营 "
+            android:textColor="#ff2a2a2a"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_live_course"
+            android:layout_width="67dp"
+            android:layout_height="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="3dp"
+            android:background="@mipmap/live"
+            android:gravity="center"
+            android:textColor="#FE8000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="121dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/tv_course_name"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="9dp"
+            android:text="当前第 7 天 / 共 12 天"
+            android:textColor="#ff6f6f6f"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_below="@id/tv_day"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:text="177236人已报名"
+            android:textColor="#ff545454"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_head_view"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_day"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/tv_sign_up" />
+
+        <RelativeLayout
+            android:layout_width="71dp"
+            android:layout_height="27dp"
+            android:layout_below="@id/tv_day"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/login_phone_shape">
+
+            <TextView
+                android:id="@+id/tv_come_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/come_in"
+                android:textColor="#ffffffff"
+                android:textSize="13sp"
+                app:drawableEndCompat="@mipmap/arrow_right" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

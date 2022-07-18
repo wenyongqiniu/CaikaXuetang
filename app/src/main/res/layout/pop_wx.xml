@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/toast_shape">
+
+        <TextView
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/tv_tips"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请添加老师微信" />
+
+        <ImageView
+            android:layout_below="@id/tv_tips"
+            android:id="@+id/iv_rc_code"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/tv_keep"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/iv_rc_code"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/login_phone_shape"
+            android:gravity="center"
+            android:text="保存到相册"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

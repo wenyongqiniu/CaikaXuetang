@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:id="@+id/no_address_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/no_address_shape"
+        android:paddingStart="12dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="16dp"
+        android:text="@string/no_address"
+        android:textColor="#fffe8000"
+        android:textSize="12sp"
+        app:drawableStartCompat="@mipmap/message_tips" />
+
+    <View
+        android:id="@+id/view_left"
+        android:layout_width="62dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/no_address_tips"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="47dp"
+        android:background="#E1E1E1" />
+
+    <TextView
+        android:id="@+id/tv_address_title"
+        android:layout_width="64dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/no_address_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="@string/receiving_address"
+        android:textColor="#ff565656"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_right"
+        android:layout_width="62dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/no_address_tips"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="75dp"
+        android:background="#E1E1E1" />
+
+    <ImageView
+        android:id="@+id/iv_no_address"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/no_address"
+        android:layout_below="@id/tv_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/iv_no_address"
+        android:layout_centerHorizontal="true"
+        android:layout_width="52dp"
+        android:layout_height="19dp"
+        android:text="@string/no_address_tips"
+        android:textColor="#ffababab"
+        android:textSize="13sp" />
+
+</RelativeLayout>

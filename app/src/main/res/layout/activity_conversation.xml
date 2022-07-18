@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include
+            android:id="@+id/main_head"
+            layout="@layout/leftout_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rl_group_info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/group_info" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_group_gonggao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/top_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gonggao"
+        android:drawableLeft="@mipmap/gonggaotu"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textColor="#1B1A1A"
+        android:textSize="12dp" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+    <!--  <RelativeLayout
+          android:id="@+id/rl_zwz"
+          android:layout_width="45dp"
+          android:layout_height="32dp"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="80dp"
+          android:visibility="gone">
+
+          <Button
+              android:id="@+id/btn_zzw"
+              android:layout_width="@dimen/dp_25"
+              android:layout_height="@dimen/dp_25"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="@dimen/dp_15"
+              android:background="@drawable/zwz"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintRight_toRightOf="parent" />
+      </RelativeLayout>
+
+      <LinearLayout
+          android:id="@+id/rl_wwz"
+          android:layout_width="150dp"
+          android:layout_height="@dimen/dp_30"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="80dp"
+          android:background="@drawable/shape_zao"
+          android:visibility="gone">
+
+          <TextView
+              android:id="@+id/tv_wanke"
+              android:layout_width="0dp"
+              android:layout_height="30dp"
+              android:layout_marginBottom="50dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="晚课"
+              android:textColor="#FF9800" />&lt;!&ndash;这是晚课的按钮，晚课时间为晚上八点&ndash;&gt;
+
+          <View
+              android:layout_width="@dimen/dp_1"
+              android:layout_height="@dimen/dp_15"
+              android:layout_gravity="center_vertical"
+              android:background="#FF9800" />
+
+          <TextView
+              android:id="@+id/tv_wujian"
+              android:layout_width="0dp"
+              android:layout_height="30dp"
+              android:layout_alignParentBottom="true"
+              android:layout_marginRight="5dp"
+              android:layout_marginBottom="50dp"
+              android:layout_toLeftOf="@id/tv_wanke"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="防骗"
+              android:textColor="#FF9800" />&lt;!&ndash;午课，防骗&ndash;&gt;
+
+          <View
+              android:layout_width="@dimen/dp_1"
+              android:layout_height="@dimen/dp_15"
+              android:layout_gravity="center_vertical"
+              android:background="#FF9800" />
+
+          <TextView
+              android:id="@+id/tv_zaoke"
+              android:layout_width="0dp"
+              android:layout_height="30dp"
+              android:layout_alignParentBottom="true"
+              android:layout_marginRight="5dp"
+              android:layout_marginBottom="50dp"
+              android:layout_toLeftOf="@id/tv_wujian"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="早课"
+              android:textColor="#FF9800" />&lt;!&ndash;这个是textview，早课按钮&ndash;&gt;
+      </LinearLayout>-->
+    <ImageView
+        android:id="@+id/iv_big_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

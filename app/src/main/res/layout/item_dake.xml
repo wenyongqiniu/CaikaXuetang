@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:background="@drawable/course_shape">
+
+    <com.example.caikaxuetang.utils.RoundImageView
+        android:scaleType="center"
+        android:id="@+id/iv_img"
+        android:layout_width="82.5dp"
+        android:layout_height="99.5dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_dake_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_course_style"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4.5dp"
+        android:layout_toEndOf="@id/iv_img"
+        android:text="淘宝副业赚钱课"
+        android:textColor="#ff2a2a2a"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dake_title"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@id/iv_img"
+        android:text="解锁20节 已学习5节   "
+        android:textColor="#ff6f6f6f"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lock"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@id/iv_img"
+        android:text="上课中"
+        android:textColor="#fffe8000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_course_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10.5dp"
+        android:background="@drawable/course_style"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="2dp"
+        android:text="视频课"
+        android:textColor="#5BAEE8" />
+
+</RelativeLayout>

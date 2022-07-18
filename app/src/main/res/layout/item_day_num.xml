@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/tv_today"
+        android:gravity="center"
+        android:textColor="#27DC2E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_day"
+        android:text="今天" />
+</RelativeLayout>

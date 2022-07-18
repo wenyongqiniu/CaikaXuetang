@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FA6637">
+
+        <ImageView
+            android:id="@+id/iv_mine"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="40dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/tv_name_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/iv_mine"
+            android:text="昵称"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_study_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_mine"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv_mine"
+            android:text="RWEE57"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top"
+        android:layout_marginTop="-18dp"
+        android:background="@drawable/my_shape">
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_my_class"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_top"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="我的班级"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:drawableEndCompat="@mipmap/right_go"
+        app:drawableStartCompat="@mipmap/my_class" />
+
+    <TextView
+        android:id="@+id/tv_my_contract"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_my_class"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="我的合同"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:drawableEndCompat="@mipmap/right_go"
+        app:drawableStartCompat="@mipmap/hetong" />
+
+
+    <TextView
+        android:id="@+id/tv_my_xieyi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_my_contract"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="隐私协议"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:drawableEndCompat="@mipmap/right_go"
+        app:drawableStartCompat="@mipmap/hetong" />
+
+    <TextView
+        android:id="@+id/tv_my_service"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_my_xieyi"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="服物条款"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:drawableEndCompat="@mipmap/right_go"
+        app:drawableStartCompat="@mipmap/hetong" />
+
+    <TextView
+        android:id="@+id/tv_quiet_login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/out_login_shape"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="#C5C0C0"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

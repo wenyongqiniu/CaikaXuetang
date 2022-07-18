@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:id="@+id/no_address_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/no_address_shape"
+        android:paddingStart="12dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="16dp"
+        android:text="@string/no_address"
+        android:textColor="#fffe8000"
+        android:textSize="12sp"
+        app:drawableStartCompat="@mipmap/message_tips" />
+
+    <View
+        android:id="@+id/view_left"
+        android:layout_width="62dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/no_address_tips"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="47dp"
+        android:background="#E1E1E1" />
+
+    <TextView
+        android:id="@+id/tv_address_title"
+        android:layout_width="64dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/no_address_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="@string/receiving_address"
+        android:textColor="#ff565656"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_right"
+        android:layout_width="62dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/no_address_tips"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="75dp"
+        android:background="#E1E1E1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ok"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_address_title"
+        android:background="@drawable/hava_address_shape">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_address_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="25dp"
+            android:text="望京慧谷时空（望京地铁站北）望京西园218楼1060"
+            android:textColor="#ff2a2a2a"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_name_phone"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/tv_address_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汪洋     139****4951"
+            android:textColor="#ff545454"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_below="@id/rl_ok"
+      android:drawablePadding="5dp"
+        android:id="@+id/tv_use_other_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:text="@string/use_other_address"
+        android:textColor="#FE8000"
+        android:textSize="13sp"
+        app:drawableStartCompat="@mipmap/change" />
+
+</RelativeLayout>
